@@ -1,0 +1,534 @@
+[
+    {
+        "asset_id": "APP-001",
+        "asset_name": "Customer Portal",
+        "asset_type": "application",
+        "owner": "Digital Applications",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "AWS",
+            "region": "ap-south-1"
+        },
+        "host": {
+            "hostname": "customer-portal-prod-01",
+            "host_type": "vm",
+            "platform": "EC2"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "22.04"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "Tomcat",
+                "version": "9.0.80"
+            }
+        ]
+    },
+    {
+        "asset_id": "APP-002",
+        "asset_name": "Employee Portal",
+        "asset_type": "application",
+        "owner": "Corporate IT",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "Azure",
+            "region": "Central India"
+        },
+        "host": {
+            "hostname": "employee-portal-prod-01",
+            "host_type": "vm",
+            "platform": "Azure VM"
+        },
+        "operating_system": {
+            "name": "Windows Server",
+            "version": "2022"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "Tomcat",
+                "version": "10.1.46"
+            }
+        ]
+    },
+    {
+        "asset_id": "APP-003",
+        "asset_name": "Payment Gateway",
+        "asset_type": "application",
+        "owner": "Payments Team",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "AWS",
+            "region": "ap-south-1"
+        },
+        "host": {
+            "hostname": "payment-gateway-prod-01",
+            "host_type": "vm",
+            "platform": "EC2"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "24.04"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "HTTP Server",
+                "version": "2.4.58"
+            }
+        ]
+    },
+    {
+        "asset_id": "APP-004",
+        "asset_name": "Internal Analytics Platform",
+        "asset_type": "application",
+        "owner": "Data Engineering",
+        "environment": "development",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "analytics-dev-01",
+            "host_type": "vm",
+            "platform": "VMware"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "22.04"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "NiFi",
+                "version": "2.5.0"
+            }
+        ]
+    },
+    {
+        "asset_id": "APP-005",
+        "asset_name": "Document Management Service",
+        "asset_type": "application",
+        "owner": "Enterprise Applications",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "AWS",
+            "region": "ap-south-1"
+        },
+        "host": {
+            "hostname": "documents-prod-01",
+            "host_type": "vm",
+            "platform": "EC2"
+        },
+        "operating_system": {
+            "name": "Amazon Linux",
+            "version": "2023"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "HTTP Server",
+                "version": "2.4.65"
+            }
+        ]
+    },
+    {
+        "asset_id": "SRV-001",
+        "asset_name": "Web Server 01",
+        "asset_type": "server",
+        "owner": "Infrastructure Team",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "web-prod-01",
+            "host_type": "physical",
+            "platform": "Bare Metal"
+        },
+        "operating_system": {
+            "name": "Windows Server",
+            "version": "2019"
+        },
+        "software": [
+            {
+                "vendor": "OpenSSL",
+                "product": "OpenSSL",
+                "version": "3.0.8"
+            }
+        ]
+    },
+    {
+        "asset_id": "SRV-002",
+        "asset_name": "Web Server 02",
+        "asset_type": "server",
+        "owner": "Infrastructure Team",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "web-prod-02",
+            "host_type": "physical",
+            "platform": "Bare Metal"
+        },
+        "operating_system": {
+            "name": "Windows Server",
+            "version": "2022"
+        },
+        "software": [
+            {
+                "vendor": "OpenSSL",
+                "product": "OpenSSL",
+                "version": "3.0.17"
+            }
+        ]
+    },
+    {
+        "asset_id": "SRV-003",
+        "asset_name": "Data Processing Server",
+        "asset_type": "server",
+        "owner": "Data Engineering",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "AWS",
+            "region": "ap-south-1"
+        },
+        "host": {
+            "hostname": "processing-prod-01",
+            "host_type": "vm",
+            "platform": "EC2"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "22.04"
+        },
+        "software": [
+            {
+                "vendor": "OpenSSL",
+                "product": "OpenSSL",
+                "version": "3.0.8"
+            }
+        ]
+    },
+    {
+        "asset_id": "SRV-004",
+        "asset_name": "Backup Server",
+        "asset_type": "server",
+        "owner": "Infrastructure Team",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "backup-prod-01",
+            "host_type": "physical",
+            "platform": "Bare Metal"
+        },
+        "operating_system": {
+            "name": "Windows Server",
+            "version": "2022"
+        },
+        "software": [
+            {
+                "vendor": "Microsoft",
+                "product": "Windows Server",
+                "version": "2022"
+            }
+        ]
+    },
+    {
+        "asset_id": "SRV-005",
+        "asset_name": "Development Server",
+        "asset_type": "server",
+        "owner": "Development Team",
+        "environment": "development",
+        "hosting": {
+            "type": "cloud",
+            "provider": "Azure",
+            "region": "Central India"
+        },
+        "host": {
+            "hostname": "dev-server-01",
+            "host_type": "vm",
+            "platform": "Azure VM"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "20.04"
+        },
+        "software": [
+            {
+                "vendor": "OpenSSL",
+                "product": "OpenSSL",
+                "version": "3.0.8"
+            }
+        ]
+    },
+    {
+        "asset_id": "DB-001",
+        "asset_name": "Customer Database",
+        "asset_type": "database",
+        "owner": "Customer Platform",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "Azure",
+            "region": "Central India"
+        },
+        "host": {
+            "hostname": "customer-db-prod-01",
+            "host_type": "managed",
+            "platform": "Azure Database"
+        },
+        "operating_system": {
+            "name": "Linux",
+            "version": "N/A"
+        },
+        "software": [
+            {
+                "vendor": "PostgreSQL",
+                "product": "PostgreSQL",
+                "version": "15.4"
+            }
+        ]
+    },
+    {
+        "asset_id": "DB-002",
+        "asset_name": "Transaction Database",
+        "asset_type": "database",
+        "owner": "Payments Team",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "AWS",
+            "region": "ap-south-1"
+        },
+        "host": {
+            "hostname": "transactions-db-prod-01",
+            "host_type": "managed",
+            "platform": "Amazon RDS"
+        },
+        "operating_system": {
+            "name": "Linux",
+            "version": "N/A"
+        },
+        "software": [
+            {
+                "vendor": "PostgreSQL",
+                "product": "PostgreSQL",
+                "version": "16.4"
+            }
+        ]
+    },
+    {
+        "asset_id": "DB-003",
+        "asset_name": "Analytics Database",
+        "asset_type": "database",
+        "owner": "Data Engineering",
+        "environment": "development",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "analytics-db-dev-01",
+            "host_type": "vm",
+            "platform": "VMware"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "22.04"
+        },
+        "software": [
+            {
+                "vendor": "PostgreSQL",
+                "product": "PostgreSQL",
+                "version": "15.4"
+            }
+        ]
+    },
+    {
+        "asset_id": "DB-004",
+        "asset_name": "HR Database",
+        "asset_type": "database",
+        "owner": "Corporate IT",
+        "environment": "production",
+        "hosting": {
+            "type": "cloud",
+            "provider": "Azure",
+            "region": "Central India"
+        },
+        "host": {
+            "hostname": "hr-db-prod-01",
+            "host_type": "managed",
+            "platform": "Azure Database"
+        },
+        "operating_system": {
+            "name": "Linux",
+            "version": "N/A"
+        },
+        "software": [
+            {
+                "vendor": "PostgreSQL",
+                "product": "PostgreSQL",
+                "version": "16.4"
+            }
+        ]
+    },
+    {
+        "asset_id": "VM-001",
+        "asset_name": "Application VM 01",
+        "asset_type": "virtual_machine",
+        "owner": "Enterprise Applications",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "app-vm-prod-01",
+            "host_type": "vm",
+            "platform": "VMware ESXi"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "22.04"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "Tomcat",
+                "version": "9.0.80"
+            }
+        ]
+    },
+    {
+        "asset_id": "VM-002",
+        "asset_name": "Application VM 02",
+        "asset_type": "virtual_machine",
+        "owner": "Enterprise Applications",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "app-vm-prod-02",
+            "host_type": "vm",
+            "platform": "VMware ESXi"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "22.04"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "Tomcat",
+                "version": "10.1.46"
+            }
+        ]
+    },
+    {
+        "asset_id": "VM-003",
+        "asset_name": "NiFi Test VM",
+        "asset_type": "virtual_machine",
+        "owner": "QA Team",
+        "environment": "test",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "nifi-test-01",
+            "host_type": "vm",
+            "platform": "VMware ESXi"
+        },
+        "operating_system": {
+            "name": "Ubuntu",
+            "version": "24.04"
+        },
+        "software": [
+            {
+                "vendor": "Apache",
+                "product": "NiFi",
+                "version": "2.6.0"
+            }
+        ]
+    },
+    {
+        "asset_id": "NET-001",
+        "asset_name": "Core Router",
+        "asset_type": "network_device",
+        "owner": "Network Operations",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "core-router-01",
+            "host_type": "physical",
+            "platform": "Cisco Hardware"
+        },
+        "operating_system": {
+            "name": "Cisco IOS",
+            "version": "15.2"
+        },
+        "software": [
+            {
+                "vendor": "Cisco",
+                "product": "IOS",
+                "version": "15.2"
+            }
+        ]
+    },
+    {
+        "asset_id": "NET-002",
+        "asset_name": "Edge Router",
+        "asset_type": "network_device",
+        "owner": "Network Operations",
+        "environment": "production",
+        "hosting": {
+            "type": "on-premises",
+            "provider": null,
+            "region": null
+        },
+        "host": {
+            "hostname": "edge-router-01",
+            "host_type": "physical",
+            "platform": "Cisco Hardware"
+        },
+        "operating_system": {
+            "name": "Cisco IOS",
+            "version": "15.9"
+        },
+        "software": [
+            {
+                "vendor": "Cisco",
+                "product": "IOS",
+                "version": "15.9"
+            }
+        ]
+    }
+]
